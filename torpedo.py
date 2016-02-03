@@ -28,7 +28,7 @@ class Torpedo(Sprite):
         '''move the bullet up the screen'''
         self.y -= self.speed
         #why do we do this in two steps???
-        self.rect.y = self.y
+        self.rect.y = self. y
 
     def draw(self):
         '''draw the torpedo'''

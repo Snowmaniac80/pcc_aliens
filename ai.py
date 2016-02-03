@@ -20,6 +20,8 @@ def run_game():
     pygame.display.set_caption("Alien Invation")
     #make ship
     ship = Ship(ai_set, screen)
+    #make a comet
+    comets = Group()
     torpedos = Group()
     # %%
     #Main Loop for the game
@@ -27,8 +29,9 @@ def run_game():
         #watch for keyboard and mouse events
         gf.check_events(ai_set, screen, ship, torpedos)
         ship.update()
-        torpedos.update()
-        gf.updt_scrn(ai_set, screen, ship, torpedos)
+        gf.updt_comet(ai_set, screen, comets)
+        gf.updt_torpedo(torpedos)
+        gf.updt_scrn(ai_set, screen, ship, comets, torpedos)
     # %%
 
 run_game()

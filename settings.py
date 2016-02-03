@@ -20,3 +20,5 @@ class Settings():
         self.torpedo_width = 3
         self.torpedo_height = 15
         self.torpedo_color = (0, 204, 0)
+        self.torpedo_number = 3
+        self.comet_number = 5
