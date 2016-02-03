@@ -29,10 +29,9 @@ class Ship():
     def update(self):
         '''update the ship's position based on the movement flag'''
         if self.go_rgt and (self.center < self.screen_rect.right):
-            self.center += self.params.speed
+            self.center += self.params.ship_speed
         if self.go_lft and (self.center > 0):
-            self.center -= self.params.speed
-        
+            self.center -= self.params.ship_speed
         self.rect.centerx = self.center
         
     def biteme(self):

@@ -16,7 +16,7 @@ class Settings():
         #ship settings
         self.ship_speed = 1.5
         #bullet settings
-        self.topedo_speed = 1
+        self.torpedo_speed = 1
         self.torpedo_width = 3
-        self.topedo_height = 15
+        self.torpedo_height = 15
         self.torpedo_color = (0, 204, 0)
